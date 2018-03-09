@@ -1,0 +1,127 @@
+body{
+	background-image: url("../images/singleBall_background.jpg");
+}
+
+container{
+	position: relative;
+	margin: 40px auto;
+	background: ;
+	padding: 20px;
+	box-sizing: border-box;
+	border:solid 2px pink;
+}
+
+.container:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.fixedContainer {
+    /* fixed height container
+       with overflow for scrollbar
+    */
+    height: 400px;
+    overflow: auto;
+}
+
+ul {
+    width: 48%;
+    float: left;
+    margin: 0;
+    padding: 0 1%;
+    list-style: none;
+}
+
+ul li {
+    background: #eee;
+    padding: 10px;
+    margin: 2px 0;
+    border: solid 1px #ccc;
+}
+
+/*----------------
+	Team List
+  ----------------*/
+
+#LeagueWrapper{
+	width:90%;
+	text-align:center;
+	margin:auto;
+}
+#TeamList:after{
+	clear:both;
+	display:table;
+	content:"";
+}
+#TeamList ul{
+	width: 14.28%;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+#TeamList li {
+    background: none;
+    padding: 5px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+#TeamList li:hover {
+    background: rgba(0,75,47);
+}
+
+#TeamList li.TeamName {
+    background: #004b2f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px #00924c;
+    font-size: 14px;
+}
+
+#TeamList li.TeamName:hover,
+#TeamList li.TeamName:active {
+    cursor: default;
+    transform: none;
+}
+
+#TeamList li.addPlayer {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+
+#TeamList ul:hover li.addPlayer {
+    display: block;
+}
+
+#TeamList li.addPlayer input {
+    width: 100%;
+    padding: 4px;
+}
+
+#TeamList li.addPlayer:active {
+    transform: none;   
+}
+#trash {
+    background: rgba(255, 0, 0, 0.7);
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin: 50px 10px 0;
+  	line-height: 200px;
+  	text-align: center;
+    float:right;
+}
+
+#trashText{
+	font-size:10px;
+	color: white;
+	text-align: center;
+	line-height: auto;
+	width:auto;
+}
