@@ -2,14 +2,14 @@ body{
 	background-image: url("../images/singleBall_background.jpg");
 }
 
-container{
+/*container{
 	position: relative;
 	margin: 40px auto;
-	background: ;
+	background:white;
 	padding: 20px;
 	box-sizing: border-box;
-	border:solid 2px pink;
-}
+	border:solid 2px #004b25;
+}*/
 
 .container:after {
     display: table;
@@ -44,36 +44,40 @@ ul li {
   ----------------*/
 
 #LeagueWrapper{
-	width:90%;
+	width:95%;
 	text-align:center;
 	margin:auto;
 }
-#TeamList:after{
+#teamList:after{
 	clear:both;
 	display:table;
 	content:"";
 }
-#TeamList ul{
+#teamList ul{
 	width: 14.28%;
 	margin:0;
 	padding:0;
 	position: relative;
 }
 
-#TeamList li {
-    background: none;
+#teamList li {
+    background: honeydew;
     padding: 5px;
-    border: none;
-    margin: 0;
+/*    border: none;
+*/  margin: 0;
     text-align: left;
-    font-size: 12px;
+    text-transform:capitalize;
+    font-size: 14px;
+    color:#004b2f;
+    font-weight: 900;
+    border:#00924c 1px solid;
 }
 
-#TeamList li:hover {
+#teamList li:hover {
     background: rgba(0,75,47);
 }
 
-#TeamList li.TeamName {
+#teamList li.teamName {
     background: #004b2f;
     color: white;
     padding: 10px;
@@ -82,46 +86,69 @@ ul li {
     font-size: 14px;
 }
 
-#TeamList li.TeamName:hover,
-#TeamList li.TeamName:active {
+#teamList li.teamName:hover,
+#teamList li.teamName:active {
     cursor: default;
     transform: none;
 }
 
-#TeamList li.addPlayer {
+#teamList li.addPlayer {
     display: none;
     position: absolute;
     top: 0;
     background: none;
+    margin-right:5px;
 }
 
-#TeamList ul:hover li.addPlayer {
+#teamList ul:hover li.addPlayer {
     display: block;
 }
 
-#TeamList li.addPlayer input {
+#teamList li.addPlayer input {
     width: 100%;
-    padding: 4px;
-}
+/*    padding: 10px;
+*/}
 
-#TeamList li.addPlayer:active {
+#teamList li.addPlayer:active {
     transform: none;   
 }
 #trash {
     background: rgba(255, 0, 0, 0.7);
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border-radius: 100px;
     margin: 50px 10px 0;
-  	line-height: 200px;
-  	text-align: center;
-    float:right;
+/*  	line-height: 200px;
+*/  text-align: center;
+/*    float:right;
+*/    position:fixed;
+    bottom:0;
+    right:0;
 }
 
 #trashText{
-	font-size:10px;
+	font-size:12px;
 	color: white;
 	text-align: center;
-	line-height: auto;
-	width:auto;
+/*	line-height: auto;
+/**/width:auto;
+
+#removedText{
+	font-size:12px;
+	color: white;
+	text-align: center;
+/*	line-height: auto;
+*/	width:auto;
+	
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: width ease 0.3s;
+    background-color: red;
+}
+
+.pill {
+    width: 300px;
 }
